@@ -5,9 +5,8 @@ window.onload = function() {
     audio.currentTime = 0; // Start the audio from the beginning
     audio.play().catch(function(error) {
       console.log("Autoplay failed, user interaction required.");
-      // Handle if autoplay fails due to browser restrictions
     });
-  };
+};
 
 window.requestAnimationFrame =
       window.__requestAnimationFrame ||
