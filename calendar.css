@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+#main-calendar-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: left; /* Centers the items horizontally */
+    align-content: start; /* Ensures proper vertical alignment with equal spacing */
+    gap: 20px; /* Adds equal spacing between items in both rows and columns */
+    width: 1400px; /* Sets a fixed width for the container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.perMonthContainer {
+    background-size: cover;
+    background-position: center;
+    background-image: url("lock.png");
+    border: 1px solid white; /* Adds a border to each month container */
+    height: 400px; /* Makes each container fill the height of the main container */
+    width: 300px; /* Adjusts the width to distribute space for 8 months */
+    margin: 20px 10px; /* Adds spacing between each month container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 20px red;
+    border-radius: 30px;
+    filter: blur(5px);
+    filter:opacity(30%);
+    
+}
+
+#navBars {
+    position: fixed;
+    top: 50px;
+    right: -60px;
+    background-color: grey;
+    height: 300px; /* Initial collapsed height */
+    width: 100px;
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* Hides overflowing content */
+}
+
+#navBars.expanded {
+    height: 300px; /* Expanded height */
+    width: 150px; /* Expanded width */
+    right: 20px; /* Adjust position when expanded */
+    border-radius: 20px;
+    z-index: 9999
+}
+
+#navBars .button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background-color: black;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 80%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Disable interactions */
+}
+
+#navBars.expanded .button {
+    opacity: 1; /* Show content when expanded */
+    pointer-events: auto; /* Enable interactions */
+}
+
+
+#navBars .button:hover {
+    background-color: red; /* Highlight on hover */
+}
+
+
+
+
+.perMonthContainer:hover{
+    filter: blur(0px);
+    filter:opacity(100%);
+    cursor: pointer;
+}
+.dates{
+    position: fixed;
+    top: 80%;
+    height: 60px;
+    width: 300px;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    box-shadow: 1px 1px 20px red;
+
+}
+
+

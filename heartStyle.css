@@ -1,0 +1,466 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(150, 38, 107);
+    font-size: xx-large;
+  }
+
+  #home-container{
+    height: 40px;
+    width: 50px;
+    background-color: white;
+    background-image: url('download.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    position: fixed;
+    margin-left: 1400px;
+  }
+  
+  .heart-container {
+    display: grid;
+    grid-template-columns: repeat(7, 30px);  /* 7 columns with 30px width each */
+    gap: 10px;  /* space between grid items */
+    position: absolute;  /* for absolute positioning */
+    top: 50%;  /* vertical center */
+    left: 50%;  /* horizontal center */
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  .pictures {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #b82c2c;
+    transition: transform 0.5s ease, width 0.5s ease, height 0.5s ease;
+  }
+  
+ 
+  
+  #picOne.red {
+    background-image: url('picAfter/01.png');
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwo.red {
+    background-image: url(picAfter/02.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picThree.red {
+    background-image: url(picAfter/11.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picFour.red {
+    background-image: url(picAfter/12.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picFive.red {
+    background-image: url(picAfter/13.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picSix.red {
+    background-image: url(picAfter/14.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picSeven.red {
+    background-image: url(picAfter/15.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picEight.red {
+    background-image: url(picAfter/16.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picNine.red {
+    background-image: url(picAfter/21.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTen.red {
+    background-image: url(picAfter/22.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picEleven.red {
+    background-image: url(picAfter/23.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwelve.red {
+    background-image: url(picAfter/24.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picThirteen.red {
+    background-image: url(picAfter/25.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picFourteen.red {
+    background-image: url(picAfter/26.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picFifteen.red {
+    background-image: url(picAfter/27.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picSixteen.red {
+    background-image: url(picAfter/31.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picSeventeen.red {
+    background-image: url(picAfter/32.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picEighteen.red {
+    background-image: url(picAfter/33.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picNineteen.red {
+    background-image: url(picAfter/34.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwenty.red {
+    background-image: url(picAfter/35.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwentyOne.red {
+    background-image: url(picAfter/41.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwentyTwo.red {
+    background-image: url(picAfter/42.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwentyThree.red {
+    background-image: url(picAfter/43.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  #picTwentyFour.red {
+    background-image: url(picAfter/51.png);
+    background-color: rgb(233, 46, 46);
+    border: 3px solid white;
+  }
+  
+  .blank {
+    width: 30px;
+    height: 30px;
+    display: flex;
+  }
+  
+  .r2_1 {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border: 1px solid #000;
+  }
+  
+  .mainContainer {
+    position: absolute;
+    width: 375px;
+    height: 520px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: filter 1s ease, opacity 1s ease;
+    visibility: hidden;
+    border-radius: 20px;
+    background-color: white;
+  }
+  
+  
+  /* Fullscreen state */
+  .mainContainer.Full {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: filter 1s ease, opacity 1s ease;
+    visibility: hidden;
+    border-radius: 20px;
+    background-color: white;
+  }
+  .theCard.Full{
+    width: 470px;
+    height: 600px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: lightblue;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+  }
+  
+  
+  .mainContainer.hidden {
+    opacity: 0;
+    filter: blur(5px);
+  }
+  
+  .mainContainer.visible {
+    opacity: 1;
+    filter: blur(0);
+  }
+  
+  .theCard {
+    width: 350px;
+    height: 450px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color: lightblue;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 20px;
+  }
+  
+  .theFront {
+    background: rgb(0, 0, 0);
+    color: #333;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+  #fullscreenButton{
+    background-image: url('full-screen.png');
+    opacity: 0.5;  
+    position: fixed;
+    margin-top: 15px;
+    margin-left: 330px;
+    border-radius: 10px;  
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+  }
+  #moveLeft {
+    background-color: black; 
+    color: white;
+    opacity: 0.5;  
+    position: fixed;
+    font-size: 30px;
+    margin-top: 220px;
+    margin-left: 14px;
+    padding: 10px 20px;  
+    border-radius: 10px;  
+    z-index: 1000;  
+    transform: translateY(-50%, -50%);
+  
+  }
+  #moveLeft.Full {
+    background-color: black; 
+    color: white;
+    opacity: 0.5;  
+    position: absolute;
+    font-size: 30px;
+    margin-top: 300px;
+    margin-left: 14px;
+    padding: 10px 20px;  
+    border-radius: 10px;  
+    z-index: 1000;  
+  
+  }
+  #moveRight {
+    background-color: black; 
+    color: white;
+    opacity: 0.5; 
+    font-size: 30px;
+    position: fixed;
+    margin-top: 220px;
+    right: 0; 
+    padding: 10px 20px;  
+    border-radius: 10px; 
+    z-index: 1000;   
+    transform: translateY(-50%, -50%);
+    
+  }
+  
+  #moveRight.Full {
+    background-color: black; 
+    color: white;
+    opacity: 0.5; 
+    font-size: 30px;
+    position: fixed;
+    margin-top: 220px;
+    right: 0; 
+    padding: 10px 20px;  
+    border-radius: 10px; 
+    z-index: 1000;   
+    transform: translateY(-50%, -50%);
+    
+  }
+  .theBack {
+    background-image: url(backPicture.jpg);
+    color: #333;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+  }
+  .flipped {
+    transform: rotateY(180deg);
+  }
+  
+  
+  #home {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 465px;
+    margin-left: -200px;
+  }
+  
+  #home:hover {
+    background-color: #2980b9;
+  }
+  
+  #turnRed {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 470px;
+    margin-left: -165px;
+  }
+  
+  #reply {
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 470px;
+    margin-left: 165px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-image: url('replyPicture.png');
+  }
+  
+  #textDisplay {
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  #textDisplay.Full {
+    text-align: justify;
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  #fullscreenButton.Full{
+    background-image: url('minimize.png');
+    opacity: 0.5;  
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 440px;
+    border-radius: 10px;  
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+  }
+  .replyBox {
+    position: absolute;
+    display: grid;
+    height: 350px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    transform: translate(1200px, 300px);
+  }
+  
+
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <main>
+        <div id="navBars">
+            <a href="index.html" class="button">Home</a>
+            <a href="watchVid.html" class="button">About</a>
+                    
+        </div>
+        
+        <div id="main-calendar-container">
+            <div class="perMonthContainer" id="panliligaw" >
+                <div class="dates" id="date-Panliligaw">10-10-2023</div>
+            </div>
+            <div class="perMonthContainer" id="pagsagot">
+                <div class="dates" id="date-Pagsagot">02-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="first">
+                <div class="dates" id="date-First">03-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="second">
+                <div class="dates" id="date-Second">04-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="third">
+                <div class="dates" id="date-Third">05-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="fourth">
+                <div class="dates" id="date-Fourth">06-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="fifth">
+                <div class="dates" id="date-Fifth">07-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="sixth">
+                <div class="dates" id="date-Sixth">08-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="seventh">
+                <div class="dates" id="date-Seventh">09-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="eighth">
+                <div class="dates" id="date-Eighth">10-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="ninth">
+                <div class="dates" id="date-Ninth">11-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="tenth">
+                <div class="dates" id="date-Tenth">12-22-2024</div>
+            </div>
+            <div class="perMonthContainer" id="eleventh">
+                <div class="dates" id="date-Eleventh">01-22-2025</div>
+            </div>
+            <div class="perMonthContainer" id="twelfth">
+                <div class="dates" id="date-Twelfth">02-22-2025</div>
+            </div>
+        </div>
+
+    </main>
+    <Script>
+        const navBars = document.getElementById('navBars');
+        //onclick="window.location.href='watchVid.html?video=panliligaw.mp4';
+        navBars.addEventListener('click', () => {
+            navBars.classList.toggle('expanded');
+        });</Script>
+</body>
+
+</html>

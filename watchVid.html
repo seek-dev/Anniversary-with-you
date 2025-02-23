@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #video-container {
+            display: flex;
+            background-color: black;
+            height: 576px;
+            width: 1024px;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #message-container {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            height: 576px;
+            width: 380px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin-left: 20px;
+            align-items: center;
+            flex-wrap: wrap; /* Allows items to wrap to the next line */
+            justify-content: center; /* Centers the items horizontally */
+            align-content: start; /* Ensures proper vertical alignment with equal spacing */
+            gap: 20px; /* Adds equal spacing between items in both rows and columns */
+            box-sizing: border-box;
+            overflow-y: scroll;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+        }
+        #navigation-bar{
+            color: black;
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            background-color: white;
+            height: 50px; /* Initial collapsed height */
+            width: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            overflow: hidden; 
+        }
+
+        .perMonthContainer {
+            background-size: cover;
+            background-position: center;
+            background-image: url("lock.png");
+            border: 1px solid white; /* Adds a border to each month container */
+            height: 100px; /* Makes each container fill the height of the main container */
+            width: 80px; /* Adjusts the width to distribute space for 8 months */
+            margin: 20px 10px; /* Adds spacing between each month container */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 1px 1px 20px rgb(194, 19, 191);
+            border-radius: 10px;
+            filter: blur(5px);
+            filter:opacity(30%);
+            
+            
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="navigation-bar" onclick="window.location.href = 'index.html'">
+        
+    </div>
+    <div id="video-container">
+        <video  autoplay controls id="videoPlayer">
+            <source src="" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="message-container">
+        <div class="perMonthContainer" id="panliligaw" onclick="window.location.href='watchVid.html?video=panliligaw.mp4';" >
+            <div class="dates" id="date-Panliligaw"></div>
+        </div>
+        <div class="perMonthContainer" id="pagsagot" onclick="window.location.href='watchVid.html?video=OPENING VIDEO.mp4';">
+            <div class="dates" id="date-Pagsagot"></div>
+        </div>
+        <div class="perMonthContainer" id="first" onclick="window.location.href='watchVid.html?video=bulong.mp4';">
+            <div class="dates" id="date-First"></div>
+        </div>
+        <div class="perMonthContainer" id="second">
+            <div class="dates" id="date-Second"></div>
+        </div>
+        <div class="perMonthContainer" id="third">
+            <div class="dates" id="date-Third"></div>
+        </div>
+        <div class="perMonthContainer" id="fourth">
+            <div class="dates" id="date-Fourth"></div>
+        </div>
+        <div class="perMonthContainer" id="fifth">
+            <div class="dates" id="date-Fifth"></div>
+        </div>
+        <div class="perMonthContainer" id="sixth">
+            <div class="dates" id="date-Sixth"></div>
+        </div>
+        <div class="perMonthContainer" id="seventh">
+            <div class="dates" id="date-Seventh"></div>
+        </div>
+        <div class="perMonthContainer" id="eighth">
+            <div class="dates" id="date-Eighth"></div>
+        </div>
+        <div class="perMonthContainer" id="ninth">
+            <div class="dates" id="date-Ninth"></div>
+        </div>
+        <div class="perMonthContainer" id="tenth">
+            <div class="dates" id="date-Tenth"></div>
+        </div>
+        <div class="perMonthContainer" id="eleventh">
+            <div class="dates" id="date-Eleventh"></div>
+        </div>
+        <div class="perMonthContainer" id="twelfth">
+            <div class="dates" id="date-Twelfth"></div>
+        </div>
+    </div>
+    <script>
+        // Get the video filename from the query string
+        const params = new URLSearchParams(window.location.search);
+        const videoFile = params.get('video'); // Extracts the "video" parameter
+
+        // Update the video source dynamically
+        if (videoFile) {
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoSource = videoPlayer.querySelector('source');
+            videoSource.src = videoFile;
+            videoPlayer.load(); // Reloads the video with the new source
+        } else {
+            alert('No video file specified.');
+        }
+    </script>
+</body>
+</html>
